@@ -1,0 +1,63 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background: linear-gradient(red, orange);
+    margin: 0;
+    padding: 0;
+}
+*, 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+}
+.cell {
+    width: 150px;
+    height: 150px;
+    border: solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-family: 'Honk', system-ui;
+    background-color: black;
+    cursor: pointer;
+}
+h1 {
+    font-family: 'Honk', system-ui;
+    font-size: 50px;
+    margin-top: 0px;
+}
+button {
+    margin-top: 20px;
+    background: linear-gradient(red, orange);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-family: 'Honk', system-ui;
+    font-size: 50px;
+    -webkit-box-shadow: 13px 11px 23px 3px rgba(0,0,0,0.55);
+    -moz-box-shadow: 13px 11px 23px 3px rgba(0,0,0,0.55);
+    box-shadow: 13px 11px 23px 3px rgba(0,0,0,0.55);
+    margin-top: 0;
+}
+p {
+    font-size: 30px;
+    font-family: 'Honk', system-ui;
+}
+.winner-cell {
+    background: linear-gradient(to right, red, orange);
+}
